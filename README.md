@@ -4,7 +4,7 @@
 TThis project develops a Retrieval-Augmented Generation (RAG) based Travel Assistant Chatbot that provides factual, concise answers to travel-related questions (e.g., transport, attractions, cultural tips).
 
 The chatbot integrates:
-Llama-3.2-3B-Instruct as the generation backbone
+Gemma-2-2B-it as the generation backbone
 BGE-Large-v1.5 as the semantic retriever
 FAISS for efficient similarity search
 A WikiVoyage knowledge base (≈200K chunks)
@@ -14,8 +14,8 @@ We further benchmark *Baseline*, *RAG (Top-k)*, and *Reranked RAG* variants and 
 ### Important Note !!
 The Python scripts in src/ are designed for evaluation and experimentation (not as interactive chatbots). 
 However, for interactive purpose, a user interface was designed using gradio in gradio_app.py.
-For ease of reproduction, please use the notebook notebooks/testing_llama3.2.ipynb (Option 1 for *How to run* section), which runs all experiments sequentially and generates the evaluation results under reports/.
-The model used *Llama-3.2-3B-Instruct* is a gated model, which requires user's application via its official website on Hugging Face. Please ensure you have access to the model before you run the notebook. The official website: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+For ease of reproduction, please use the notebook notebooks/testing_gemma2.ipynb (Option 1 for *How to run* section), which runs all experiments sequentially and generates the evaluation results under reports/.
+The official website: https://huggingface.co/google/gemma-2-2b-it
 
 
 ---
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ## How to run
 ### Option A: (without interactive UI)
 #### a) open the notebook
-Open notebooks/testing_llama3.2.ipynb in Google Colab or VS Code Jupyter.
+Open notebooks/testing_gemma2.ipynb in Google Colab or VS Code Jupyter.
 
 #### b) Set Runtime
 Change your runtime to GPU
@@ -73,7 +73,7 @@ All generated results are saved to reports/.
 ### Option B: (With interactive UI)
 #### a) Baseline Evaluation
 ```bash
-python3 src/baseline_llama3.2.py
+python3 src/baseline_gemma2.py
 ```
 Generates reports/evaluation_llama3.2_baseline.csv
 
