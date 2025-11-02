@@ -117,6 +117,6 @@ Outputs and figures are automatically saved to reports/.
 ## Output Files
 | File| Description |
 |--------|--------------|
-| `evaluation_llama3.2_baseline.csv` | Model only QA results.|
-| `evaluation_llama3.2_RAG.csv` | RAG Top-k (k=3) results |
-| `evaluation_llama3.2_RAG_reranked.csv` | RAG with reranking results |
+| `evaluation_gemma2_baseline.csv` | Model only QA results.|
+| `evaluation_gemma2_RAG_topk.csv` | RAG Top-k (k=3) results |
+| `evaluation_gemma2_RAG_reranked.csv` | RAG with reranking results |
