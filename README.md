@@ -1,10 +1,10 @@
 # Travel Assistant Chatbot (DSA4213 Project)
 
 ## Overview
-TThis project develops a Retrieval-Augmented Generation (RAG) based Travel Assistant Chatbot that provides factual, concise answers to travel-related questions (e.g., transport, attractions, cultural tips).
+This project develops a Retrieval-Augmented Generation (RAG) based Travel Assistant Chatbot that provides factual, concise answers to travel-related questions (e.g., transport, attractions, cultural tips). 
 
 The chatbot integrates:
-Llama-3.2-3B-Instruct as the generation backbone
+Llama-3.2-3B-Instruct as the generation backbone (also compared with Gemma-2-2B-IT to inspect perfomance, please check branch gemma2)
 BGE-Large-v1.5 as the semantic retriever
 FAISS for efficient similarity search
 A WikiVoyage knowledge base (≈200K chunks)
